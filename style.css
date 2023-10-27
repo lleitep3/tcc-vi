@@ -39,6 +39,10 @@ p {
   display: none;
 }
 
+.dropdown:hover > a {
+  background-color: #394151;
+}
+
 .dropdown:hover ul {
   display: block;
 }
