@@ -50,6 +50,7 @@ p {
 
 .mobile-menu {
   display: none;
+  font-size: 16px;
 }
 
 .back {
@@ -82,6 +83,6 @@ p {
   }
 
   .mobile-menu ul ul li {
-    border-left: 6px solid #374151;
+    border-left: 8px solid #374151;
   }
 }
