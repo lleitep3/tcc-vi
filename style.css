@@ -35,6 +35,10 @@ p {
   background-color: #fdfdfd;
 }
 
+.header-top {
+  z-index: 1;
+}
+
 .dropdown ul {
   display: none;
   font-size: 16px;
@@ -73,6 +77,21 @@ p {
   margin: 1rem;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 39.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 767px) {
   .mobile-menu {
     display: initial;
@@ -89,5 +108,13 @@ p {
 
   .mobile-menu ul ul li {
     border-left: 8px solid #374151;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    max-height: 300px;
   }
 }
