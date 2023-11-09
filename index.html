@@ -6,500 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./style.css">
-    <title>Próxima parada estação sarau</title>
+    <link rel="stylesheet" href="./style-2.css">
+    <link rel="stylesheet" href="./carousel.css">
+    <title>PROXIMA PARADA ESTAÇÃO SARAU</title>
 </head>
 
-<body class="bg-gray-100">
-    <header class="sticky top-0 header-top">
-        <nav class="bg-gray-600">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                <div class="flex items-center justify-between h-16">
-                    <div class="md:hidden navbar relative">
-                        <div class="hamburger flex flex-col hover:bg-gray-700">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+<body>
+    <header class="top-menu">
+        <h1 class="top-menu_title">
+            <span class="square"></span>
+            <span>PROXIMA PARADA ESTAÇÃO SARAU</span>
+        </h1>
 
-                    <div class="mobile-menu">
-                        <ul class="flex space-x-4 xs:flex-col bg-gray-600">
-                            <li class="group relative">
-                                <span class="text-white px-3 py-2 rounded-md h-10 block font-bold">Tópicos</span>
-                                <ul class="space-y-2 bg-gray-600 text-white">
-                                    <li class="hover:bg-gray-700">
-                                        <a href="#section3" class="block px-4 py-2">Um sarau para salvar a alma</a>
-                                    </li>
-                                    <li class="hover:bg-gray-700">
-                                        <a href="#section4" class="block px-4 py-2">Marginal x periférica</a>
-                                    </li>
-                                    <li class="hover:bg-gray-700">
-                                        <a href="#section5" class="block px-4 py-2">Periferia é periferia</a>
-                                    </li>
-                                    <li class="hover:bg-gray-700">
-                                        <a href="#section6" class="block px-4 py-2">Palavras pronunciadas pelo poeta</a>
-                                    </li>
-                                    <li class="hover:bg-gray-700">
-                                        <a href="#section7" class="block px-4 py-2">Poesia nas escolas</a>
-                                    </li>
-                                    <li class="hover:bg-gray-700">
-                                        <a href="#section8" class="block px-4 py-2">Poetisa de zona</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+        <select class="select-menu" onchange="goSection">
+            <option value="#section3">Um sarau para salvar a alma</option>
+            <option value="#section4">Marginal x periférica</option>
+            <option value="#section5">Periferia é periferia</option>
+            <option value="#section6">Palavras pronunciadas pelo poeta</option>
+            <option value="#section7">Poesia nas escolas</option>
+            <option value="#section8">Poetisa de zona</option>
+        </select>
 
-                    <h1 class="flex-shrink-0">
-                        <a href="#" class="text-white font-bold text-xl">
-                            Próxima parada estação sarau
-                        </a>
-                    </h1>
-                    <ul class="hidden md:flex space-x-4 xs:flex-col">
-                        <li class="group relative dropdown hover:bg-gray-700">
-                            <a href="#"
-                                class="text-white bg-gray-700 hover:bg-gray-800 px-3 py-2 rounded-md">Tópicos</a>
-                            <ul
-                                class="hidden absolute right-0 mt-0 space-y-2 bg-gray-700 text-white group-hover:block w-80">
-                                <li><a href="#section3" class="block px-4 py-2 hover:bg-gray-800">Um sarau para salvar a
-                                        alma</a></li>
-                                <li><a href="#section4" class="block px-4 py-2 hover:bg-gray-800">Marginal x
-                                        periférica</a></li>
-                                <li><a href="#section5" class="block px-4 py-2 hover:bg-gray-800">Periferia é
-                                        periferia</a></li>
-                                <li><a href="#section6" class="block px-4 py-2 hover:bg-gray-800">Palavras pronunciadas
-                                        pelo poeta</a>
-                                </li>
-                                <li><a href="#section7" class="block px-4 py-2 hover:bg-gray-800">Poesia nas escolas</a>
-                                </li>
-                                <li><a href="#section8" class="block px-4 py-2 hover:bg-gray-800">Poetisa de zona</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
+    <div class="bg-only-photo"></div>
+    <div class="bg-top">
+        <h2 class="bg-top_title">
+            PROXIMA PARADA:
+            <br />
+            ESTAÇÃO SARAU
+        </h2>
+        <small class="bg-top_subtitle">
+            Das elites para as periferias, da academia para os saraus,
+            <br />
+            a literatura periférica ganha vida na Região Metropolitana de Campinas
+        </small>
+    </div>
+    <div class="bg-white">
+        <section class="container">
+            <p>
+                Um lugar vazio passa a ser ocupado. Pessoas chegam e se sentam, curiosas para ouvir outras vozes. A
+                estação
+                de trem se ilumina. O bar abre as portas. Alguém se aproxima do microfone. Finalmente, o silêncio é
+                povoado
+                pelas palavras. O sarau começou.
+            </p>
 
-    <main class="principal">
-        <section id="section1" class="bg-gray-100">
-            <div class="container mx-auto">
-                <p class="pt-4">
-                    <small class="bg-gray-300 px-2">
-                        Das elites para as periferias, da academia para os saraus, a literatura periférica
-                        ganha vida na Região Metropolitana de Campinas.
-                    </small>
-                </p>
-                <p>
-                    Um lugar vazio passa a ser ocupado. Pessoas chegam e se sentam, curiosas para ouvir outras
-                    vozes. A estação de trem se ilumina. O bar abre as portas. Alguém se aproxima do microfone.
-                    Finalmente, o silêncio é povoado pelas palavras. O sarau começou.
-                </p>
-                <p>
-                    Como dito pelo poeta Sérgio Vaz, quando uma pessoa faz a gentileza de falar e outra pessoa
-                    faz a gentileza de ouvir, é aí que nasce a literatura. Só que as vozes presentes são da periferia,
-                    que historicamente não teve um espaço para se expressar. Com essa conexão, surge a
-                    literatura periférica.
-                </p>
-                <p>
-                    No Brasil, a literatura periférica começa a se apropriar de eventos culturais em que
-                    tradicionalmente pessoas se encontram para se expressarem artisticamente, com poesias,
-                    músicas e danças, os chamados saraus. Com a apropriação da população marginalizada, eles
-                    se transformam em saraus periféricos. Na Região Metropolitana de Campinas, existem dois
-                    saraus desse tipo, o Parada Poética, que acontece em Hortolândia em toda 1ª segunda-feira
-                    do mês, e em Nova Odessa na 2ª segunda-feira, e o Sarau da Dalva em Campinas, toda 2ª
-                    quarta-feira do mês.
-                </p>
+            <p>
+                O poeta Sérgio Vaz diz que quando uma pessoa faz a gentileza de falar e outra pessoa faz a gentileza de
+                ouvir, é
+                aí que nasce a literatura. Só que as vozes presentes nesses saraus vêm da periferia, historicamente sem
+                espaço
+                para se expressar. Cria-se então, uma conexão entre literatura e periferia, a literatura periférica.
+            </p>
+            <p>
+                No Brasil, a literatura periférica começa a se apropriar, no início dos anos 2000, dos saraus, eventos
+                culturais
+                em que tradicionalmente pessoas se encontram para se expressarem artisticamente, por meio de poesias,
+                músicas e
+                danças. Com o processo de ocupação dos espaços, eles se transformam em saraus periféricos. Na Região
+                Metropolitana de Campinas, existem dois saraus desse tipo, o Parada Poética, que acontece em Hortolândia
+                e
+                em
+                Nova Odessa na primeira e na 2ª segunda-feira do mês respectivamente, e o Sarau da Dalva em Campinas,
+                toda
+                2ª quarta-feira do mês.
+            </p>
 
-                <div class="bg-gray-500 video-container">
-                    <iframe src="https://www.youtube.com/embed/vWpMyN9xMmM?si=A6B1E4RhK7mPCzHq"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+            <div class="box-brown">
+                <p>
+                    Os saraus chegaram ao Brasil no século XIX, como um meio de recreação para membros da aristocracia e
+                    da
+                    burguesia, inspirados pelo modelo francês, de reuniões noturnas com o compartilhamento de
+                    literatura,
+                    música e bebidas. Eles se popularizaram no Rio de Janeiro, a partir da corte de Dom João I, e se
+                    espalharam para outras regiões do país, mas ainda em um formato elitizado. Com o tempo, as escolas
+                    também começaram a realizar esse tipo de evento, com o objetivo de estimular o desenvolvimento da
+                    criatividade dos alunos, só que ainda direcionados para as classes mais altas. A criação do
+                    Cooperifa,
+                    nos anos 2000 marca um novo tipo de sarau, com um caráter menos elitizado e aberto a todos, os
+                    saraus
+                    periféricos. Esses novos ambientes permitem à periferia expressar sua própria arte, sua própria
+                    cultura,
+                    sua própria voz e suas próprias poesias.
+                </p>
+            </div>
+            <p>
+                É “tirar a poesia da biblioteca, tirar da academia, tirar do paletó e levar a poesia pra rua, essa é a
+                ideia
+                do
+                Parada Poética”, afirma Renan Inquérito, idealizador do Parada Poética em Nova Odessa e Hortolândia. Os
+                saraus
+                dentro das periferias se popularizaram nos anos 2000, com o surgimento do Cooperifa, em São Paulo. Mas a
+                transposição da poesia dos ambientes elitistas começou um pouco antes, em 1990, com o movimento musical
+                Hip-Hop.
+            </p>
+
+            <p>
+                O Hip-Hop, junto à literatura periférica, ganha espaço no Brasil ao contar a vivência das periferias. Os
+                artistas de ambos movimentos passam a ser ouvidos por suas próprias comunidades, criando um sentimento
+                de
+                pertencimento e identificação com aquilo que estava sendo escrito e ouvido. Eis que surge o grupo de rap
+                Racionais MC´s e autores como Sérgio Vaz e Ferréz.
+            </p>
+            <p>
+                Paulo Cotegipe, participante do Sarau Parada Poética, fala um pouco sobre a liberdade de expressão
+                dentro
+                dos saraus.
+            </p>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel01.JPG" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel02.JPG" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel03.JPG" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel04.JPG" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel05.JPG" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel06.png" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel07.JPG" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel08.png" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel09.png" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel10.png" alt="Imagem 1"></div>
+                    <div class="carousel-item"><img src="./assets/images/carousel/carousel11.png" alt="Imagem 1"></div>
                 </div>
-                <p>
-                    É “tirar a poesia da biblioteca, tirar da academia, tirar do paletó e levar a poesia pra rua, essa
-                    é a ideia do Parada Poética”, afirma Renan Inquérito, idealizador do Parada Poética em Nova
-                    Odessa e Hortolândia. Os saraus dentro das periferias se popularizaram nos anos 2000, com o
-                    surgimento do Cooperifa, em São Paulo. Só que o processo de retirada da poesia dos
-                    ambientes elitistas começou um pouco antes, em 1990, com o movimento musical Hip-Hop.
-                </p>
-                <p>
-                    O Hip-Hop, junto à literatura periférica, ganha espaço no Brasil, ao contar a vivência das
-                    periferias. Os artistas de ambos movimentos passam a ser ouvidos por suas comunidades,
-                    criando um sentimento de pertencimento e identificação com aquilo que estava sendo escrito
-                    e ouvido. Eis que surge o grupo de rap, Racionais MC´s e autores como Sérgio Vaz e Ferréz.
-                </p>
+                <button class="btn-prev"> &#10508; </button>
+                <button class="btn-next"> &#10509; </button>
             </div>
         </section>
+        <section class="section1 container section">
+            <h2 class="text-center title-section"><b>U</b>m sarau para salvar a alma</h2>
+            <div class="box-gray">
+                <div class="bg">
+                    <p>
+                        Em 2013 nasce o sarau Parada Poética, em Nova Odessa, pelas mãos de Renan Inquérito, geógrafo,
+                        escritor, rapper e educador. Em 2014, o Sarau da Dalva em Campinas, por Rafael Carvalho,
+                        escritor.
+                        Ambos em bares. Ambos pela necessidade de um local para falar da periferia para a periferia.
+                    </p>
+                    <p>
+                        Com o tempo, o bar que sediava o Parada Poética fecha, e ele passa a ser realizado na estação
+                        ferroviária de Nova Odessa. Em 2022, chega também à estação ferroviária de Hortolândia. O uso
+                        das
+                        estações é simbólico, pois elas se encontravam abandonadas, desativadas e inóspitas. Renan
+                        destaca
+                        que esses lugares são lugares de encontros e despedidas, de movimento, de passagem e é
+                        exatamente
+                        isso que querem da poesia, “que ela vá, que ela volte, que não fique parada na prateleira”.
+                        Apesar
+                        das estações terem sido desligadas, os trilhos continuam a funcionar, com o trem passando
+                        enquanto
+                        as pessoas o sarau acontece
+                    </p>
 
-        <section id="section3" class="bg-gray-300">
-            <div class="container mx-auto py-16">
-                <h2>Um sarau para salvar a alma</h2>
+                    <p>
+                        Já em Campinas, no Bar Estrela Dalva, o poeta Rafael Carvalho cria um sarau com microfone aberto
+                        que
+                        conquista diversas pessoas. Dez anos depois, o Sarau da Dalva reúne um público fiel de mulheres,
+                        homens, crianças, jovens e idosos que se expressam ali às quartas-feiras. “O Brasil é
+                        praticamente
+                        todo periférico. Nós somos muitas pessoas, com uma potência imensa enquanto povo e enquanto
+                        individualidades. E a gente pode fazer muita coisa, inclusive pela poesia, tendo o amor como
+                        principal forma de resistência”, afirma o idealizador.
+                    </p>
 
-                <p>
-                    Em 2013 nasce o sarau Parada Poética, em Nova Odessa, pelas mãos de Renan Inquérito,
-                    geógrafo e artista. Em 2014, o Sarau da Dalva em Campinas, por Rafael Carvalho, artista.
-                    Ambos em bares e ambos pela necessidade de um local para falar da periferia para a periferia.
-                </p>
+                    <p>
+                        “O sarau é um grito nosso, uma vontade de querer reverberar nossas ideias pela cidade” , como
+                        dito
+                        por Renan. E hoje é dia de sarau.
+                    </p>
 
-                <p>
-                    Com o tempo, o bar que sediava o Parada Poética fechou, e ele passou a ser realizado na
-                    estação ferroviária de Nova Odessa e, em 2020, chegou também à estação ferroviária de
-                    Hortolândia. O uso das estações é simbólico, pois elas se encontravam abandonadas,
-                    desativadas e inóspitas. Renan destaca que esses lugares são lugares de encontros e
-                    despedidas, de movimento, de passagem e é exatamente isso que querem da poesia, “que ela
-                    vá, que ela volte, que não fique parada na prateleira”. Apesar das estações serem desativadas,
-                    os trilhos continuam a funcionar, com o trem passando enquanto as pessoas declamam suas
-                    poesias.
-                </p>
-
-                <p>
-                    Enquanto isso, no Bar Estrela Dalva, o poeta Rafael Carvalho cria um sarau com microfone
-                    aberto que conquista diversas pessoas em Campinas. Dez anos depois, o Sarau da Dalva
-                    reúne um público fiel de mulheres, homens, crianças, jovens e idosos que se expressam ali às
-                    quartas-feiras. “O Brasil é praticamente todo periférico. Nós somos muitas pessoas, com uma
-                    potência imensa enquanto povo e enquanto individualidades. E a gente pode fazer muita
-                    coisa, inclusive pela poesia, tendo o amor como principal forma de resistência”, afirma o
-                    idealizador.
-                </p>
-                <p>
-                    <i>“O sarau é um grito nosso, uma vontade de querer reverberar nossas ideias pela cidade”</i> como
-                    diz Renan e hoje é dia de sarau.
-                </p>
-            </div>
-        </section>
-
-        <section id="section4" class=" bg-gray-100">
-            <div class="container mx-auto py-16">
-                <h2>Marginal x periférica</h2>
-
-                <p>
-                    A literatura periférica nasce a partir de um outro gênero que se popularizou nos anos 70: a
-                    literatura marginal. Jovens autores marginais, das classes médias e altas da sociedade,
-                    combatem a censura editorial e ideológica durante os anos da ditadura e dão início a um
-                    movimento de textos que usam novas linguagens e formas, além de se posicionarem contra o
-                    estado e expressarem através de suas obras, as dificuldades da juventude da época.
-                </p>
-
-                <p>
-                    No entanto, como os termos periferia e marginalidade são confundidos, as duas literaturas
-                    também são. Para Marcio Vidal Marinho, formado em letras e mestre em estudos comparados
-                    de literaturas de língua portuguesa pela USP (Universidade de São Paulo), a literatura
-                    marginal é marginal no sentido político, porém não é periférica, já que não vem da periferia.
-                    “Para ser um poeta da literatura periférica, você tem que ter vindo da periferia, não precisa
-                    necessariamente morar, mas tem que ser seu lugar de origem”. Ou seja, <strong>toda literatura
-                        periférica é marginal, mas nem toda literatura marginal é periférica.
-                    </strong>
-                </p>
-
-                <p>
-                    Ao comparar o poema “Gente Miúda” do autor periférico Sérgio Vaz e “O Bicho” do poeta
-                    marginal Manuel Bandeira, Márcio explica a diferença entre os gêneros. Nestes poemas
-                    ambos os autores contam a história de uma pessoa em situação de rua, o que muda é a ótica, o
-                    chamado “eu lírico”. Para Vaz, a pobreza não é estranha, ele não sente medo daquela
-                    situação, fazendo com que ele humanize o personagem principal, Daniel, e ao longo do
-                    poema apresenta as consequências sociais do porquê aquela situação está acontecendo,
-                    causando uma reflexão e dando um olhar crítico à situação. Já Manuel distancia o morador,
-                    sem nome, sem características, desumanizando o personagem.
-                </p>
-
-                <div class="flex justify-center gap-2 flex-rows sm:flex-cols flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./assets/images/POESIA-A.jpg" />
-                        </div>
-
-                        <div class="flip-card-back">
-                            <img src="./assets/images/POESIA-B.jpg" />
-                        </div>
+                    <div>
+                        <hr />
+                        AQUI VIDEO
+                        <hr />
                     </div>
-                </div>
-        </section>
 
-        <section id="section5" class=" bg-gray-200">
-            <div class="container mx-auto py-16">
-                <h2>Periferia é periferia</h2>
-
-                <p>
-                    Nos anos 1990, o intenso processo de urbanização e industrialização da maior metrópole do
-                    Brasil, São Paulo, chega a um ponto de explosão: os bairros periféricos começaram a registrar
-                    números muito grandes de homicídios, com a cidade alcançando entre 1985 e 1995, cerca de
-                    58.354 homicídios, segundo dados da Secretaria Pública de São Paulo. Os bairros
-                    considerados mais perigosos, Jardim Ângela e Capão Redondo, registraram naquele mesmo
-                    período, 20 homicídios por mês.
-                </p>
-
-                <p>
-                    Com toda essa violência, a periferia sentiu a necessidade de compartilhar essas dificuldades e
-                    expressar a realidade que vivenciam de alguma maneira, em busca da formação de uma
-                    <strong>identidade periférica</strong> e da transformação social daqueles espaços.“Acho que a
-                    literatura
-                    marginal é uma ponte de conhecimento para aqueles que não têm acesso à periferia. Ela é
-                    uma comunicação interna para a galera da periferia, mas também uma comunicação para
-                    levar para aqueles que não tem acesso à periferia”, afirma Bruna Bueno, organizadora do
-                    Parada Poética.
-                </p>
-
-                <p>
-                    Aos poucos, o movimento da literatura periférica começa a ganhar forma para além da
-                    literatura marginal, primeiro em São Paulo, e depois no Rio de Janeiro, se espalhando com o
-                    tempo para diversas cidades do país. As obras carregam muita inspiração do Quarto de
-                    Despejo, de Carolina Maria de Jesus, considerada a primeira escritora periférica do país.
-                    Publicada em 1960, a obra reunia registros de seus diários, nos quais contava a vivência da
-                    sua favela, e é considerada a primeira de seu gênero.
-                </p>
-
-                <div class="bg-gray-500">
-                    ------- entra linha do tempo com obras da periferia a partir de quarto de despejo
-                </div>
-
-                <p>
-                    Dessa forma, a periferia encontra um local livre, em que podem recitar suas poesias ou ler
-                    suas obras sem terem que passar por todo processo de publicar um livro. De acordo com Mei,
-                    o principal objetivo desses autores é terem suas vozes fixadas em algum lugar e ouvidas por
-                    alguém, afinal essa voz sempre esteve ali, só que ninguém prestava atenção.
-                </p>
-            </div>
-        </section>
-
-        <section id="section6" class="bg-gray-300">
-            <div class="container mx-auto py-16">
-                <h2>Palavras pronunciadas pelo poeta</h2>
-
-                <p>
-                    Genival Oliveira Gonçalves faz parte de uma história que nunca se encerra, ele continua a
-                    declamar "O amor venceu a guerra". Mais conhecido pelo seu nome artístico, GOG - cantor,
-                    rapper e escritor brasileiro -, mesmo após mais de 45 anos de carreira, segue fiel ao
-                    movimento hip-hop. Sendo considerado um "Poeta do Rap Nacional", GOG aproxima rap e
-                    literatura, poesia e microfone, papel e caneta. (Inserir aspas de alguma fala da entrevista do
-                    GOG).
-                </p>
-
-                <div class="bg-gray-500">
-                    - vídeo do GOG -
+                    <p>
+                        A literatura periférica, quando manifestada nesses ambientes, encontra um espaço aberto para
+                        sair do papel. “Nos saraus você tem um contingente de escritores que, às vezes, não chegam a
+                        publicar seus textos, mas tem seus textos lidos e ouvidos por um público. Ali, você tem uma
+                        dinâmica muito mais encerrada no sentido que as pessoas estão escrevendo para seus pares,
+                        principalmente para as pessoas que estão vivenciando e compreendem muito bem o que está sendo
+                        dito ali”, afirma Mei Hua Soares, doutora em Linguagem e Educação pela Faculdade de Educação da
+                        Universidade de São Paulo (FE-USP).
+                    </p>
+                    <p>
+                        Dessa forma, a periferia encontra um local livre, em que podem recitar suas poesias ou ler suas
+                        obras sem terem que passar por todo processo de publicar um livro. De acordo com Mei, o
+                        principal objetivo desses autores é terem suas vozes fixadas em algum lugar e ouvidas por
+                        alguém, afinal essa voz sempre esteve ali, só que ninguém ouvia.
+                    </p>
                 </div>
             </div>
         </section>
+    </div>
 
-        <section id="section7" class="bg-gray-100">
-            <div class="container mx-auto py-16">
-                <h2>Poesia nas escolas</h2>
-
-                <p>
-                    Da mesma forma que os escritores periféricos iniciam sua trajetória apontando para temáticas
-                    como desigualdade social, violência policial e racismo, os poetas dos saraus também utilizam
-                    sua voz para a revolta. “Tem uma liberdade do que a gente pensa e do que a gente fala.
-                    Quando vejo pessoas sofrendo preconceito, quando vejo a humanidade não vivendo aquilo
-                    que é humano, eu gosto de me expressar escrevendo. E o sarau é uma liberdade de minhas
-                    expressões”, afirma António José Fernandes, lavrador, conhecido no sarau como Maritaca.
-                </p>
-
-                <p>
-                    Paulo Cotegipe, professor na ONG Projeto Gente Nova (PROGEN), em Campinas, e
-                    participante do Sarau Parada Poética, lembra que conheceu a literatura periférica através do
-                    seu trabalho, e depois no próprio sarau. “Eu trabalho com crianças e adolescentes vítimas de
-                    violências sociais, então faço escrita, faço poesia, dou atividade de esportes, música e
-                    histórias. Mas a potencialidade do espaço aumentou minha visão, meu campo de ideias, de
-                    possibilidades”.
-                </p>
-
-                <p>
-                    Do sarau para a escola, a literatura periférica também se tornou um ponto de estudo, sem
-                    deixar de lado a expressão dos participantes. É assim que começa o Poesia contra a
-                    violência, uma disciplina eletiva na Escola Estadual Guido Rosolen, na periferia de
-                    Hortolândia, pelas ideias dos professores Barbara Prestes e Acácio Oliveira.
-                </p>
-
-                <p>
-                    A disciplina conta com 44 alunos e tem o objetivo de usar a literatura e a poesia para abordar
-                    vários temas com os jovens, como violência policial, racismo e machismo. A eletiva já
-                    publicou dois livros, com poesias dos alunos participantes. “Eu comecei a presenciar
-                    situações de violência dentro das escolas, entre os alunos e os alunos com os professores. Aí
-                    eu comecei a abrir um espaço para essa conversa, a partir disso eu percebi um certo
-                    engajamento dos alunos com relação à escrita, literatura e poesia”, explica Bárbara. O projeto
-                    conta ainda com a constante participação dentro dos saraus, levando os alunos em uma
-                    excursão ao Parada Poética de Hortolândia. Lá, eles podem recitar suas poesias e externalizar
-                    os temas discutidos dentro do projeto.
-                </p>
-
-                <p>
-                    Para um dos participantes do projeto, David Nelson, de 17 anos, as primeiras vezes que
-                    declamou deixaram ele tremendo,conforme foi participando mais vezes, o clima do sarau o
-                    deixou mais tranquilo, “porque é um lugar que te acolhe, que te faz sentir alguém especial. É
-                    um ambiente que te traz felicidade”. Outra aluna da disciplina é Gabrielli, de 17 anos, que se
-                    sentiu emocionada ao recitar pela primeira vez no Sarau, “a poesia vai limpando a gente, a
-                    gente consegue falar e expressar o que estamos sentindo. Foi um momento muito importante
-                    para mim”. Para esses jovens, a poesia os apoiou em momentos de incerteza, de dificuldade
-                    em casa ou na própria escola, a literatura deu voz para que pudessem expressar o que estava
-                    preso dentro de si.
-                </p>
-
-                <div class="bg-gray-500">
-                    - Entra vídeo da escola -
-                </div>
-
-                <p>
-                    “Eu acho que a educação transforma tudo, ela é a chave para salvar nossa vida. E
-                    principalmente em escolas públicas, em periferias, que são a maioria do nosso país, acho que
-                    quanto mais a gente ampliar essa educação de poesias, de saraus, isso vai transformar a vida
-                    de todos”, disse Rafaela, de 15 anos, que não deixa de sonhar e acredita que a situação das
-                    periferias pode melhorar.
-                </p>
-
-                <p>
-                    “Você precisa ter a sua parcela de sonho, tem que ser um direito, porque por intermédio dele
-                    que talvez você se mova, que você construa seus trajetos e ações”, ressalta Mei Hua que
-                    atuou por catorze anos na rede estadual de São Paulo, levando obras do gênero para seus
-                    alunos. Em um dos casos, um aluno disse: “Esse cara (Allan da Rosa) trabalhou como
-                    feirante, gari e agora tá escrevendo profe, então acho que eu também posso escrever”. Para
-                    ela, é uma questão de se ver no outro e perceber que é possível seguir um caminho que antes
-                    era negado, como se fosse uma autorização para escrever.
-                </p>
-
-                <p class="text-center">
-                    <strong>
-                        “A Esmeralda Ortiz fala que um dos castigos maiores dentro da Febem é você não ter
-                        acesso a lápis e caneta, porque ela queria escrever e não podia.”
-                    </strong>
-                    <small>frase em alta.</small>
-                </p>
-            </div>
-        </section>
-
-        <section id="section8" class="bg-gray-200">
-            <div class="container mx-auto py-16">
-                <h2>Poetisa de zona</h2>
-
-                <p>
-                    De adolescente “nerd de quebrada” como ela se intitulava, a “poetisa de zona” como se
-                    chama em seus poemas, a vida de Vanusa Passos é perpassada pelo Hip-Hop. Ao primeiro
-                    contato com os saraus, se emocionou do início ao fim, descobrindo uma liberdade de falar.
-                    “Acho que uma característica dos saraus é a possibilidade dessa poesia marginal, esse
-                    escrever livre, nem tão dentro das regras gramaticais, mas com um peso de
-                    sentimento,independente da qualidade linguística. Ele é democrático, porque todo mundo
-                    pode fazer.”, declara.
-                </p>
-
-                <p>
-                    Vanusa iniciou sua trajetória como pedagoga, com um projeto dentro de entidades
-                    assistenciais de Campinas, para a prevenção do uso de drogas por adolescentes. Ali ela
-                    apresentou a arte, o esporte e o lazer como alternativa. Logo após, trabalhou no Jardim
-                    Itatinga, bairro com grandes zonas de prostituição em Campinas, lá ela descobriu o grafite e
-                    passou a pensar em como usá-lo para educar os jovens daquela área. Com toda essa bagagem
-                    iniciou um trabalho com os meninos que cumpriam Liberdade Assistida (LA) após passarem
-                    pela Fundação Casa, incorporando o grafite, a poesia e a arte como a saída do ciclo de
-                    violências que cercam esses jovens.
-
-                </p>
-
-                <p>
-                    “Na minha profissão, eu precisava de mais, porque a faculdade nos forma, mas a gente chega
-                    no mundão e tem que fazer nossos corres, tem coisa que não enquadra. Eu fui criando minhas
-                    próprias estratégias de trabalho com base teórica, mas com muita vivência também”, afirma.
-                    Vanusa encontra no Sarau da Dalva e no Parada Poética, um espaço que serve de
-                    complemento profissional e motivação pessoal.
-                </p>
-
-                <p>
-                    Como poeta, traz metáforas e provocações em sua escrita, seguindo uma linha erótica
-                    implícita, o que desperta curiosidade e questionamentos. Ela conta que ao longo da carreira
-                    sofreu censuras em eventos. “Uma mulher falou que eu era poetisa de zona e pretendo
-                    escrever um livro com esse nome! Tenho toda uma experiencia como educadora dentro de
-                    uma zona de prostituição, o que a pessoa achou que ia me ofender, não vai me ofender, não
-                    é?”
-                </p>
-
-                <p>
-                    <strong>
-                        “Eu tive um tempo de censura, porque minha poesia tem uma linha mais erótica.
-                        Entendo, até porque meu corpo é um corpo que ninguém quer ouvir. Uma mulher
-                        falando sobre prazer, sobre o próprio corpo, sobre desejos e limites.”
-                    </strong>
-                </p>
-
-                <p>
-                    Em poucas palavras, muita arte. Vanusa Passos, poeta periférica. Poetisa de zona.
-                </p>
-
-                <div class="bg-gray-500">
-                    - entra vídeo Vanusa Passos -
-                </div>
-
-
-                <p>
-                    Intertítulo Final
-                </p>
-
-                <div class="bg-gray-500">
-                    - final da reportagem -
-                </div>
-            </div>
-
-        </section>
-
-        <a href="#section1" class="back" alt="voltar ao topo">&#8673;</a>
-    </main>
-
+    <script src="./carousel.js"></script>
     <script>
-
-        const hamburger = document.querySelector('.hamburger')
-        const main = document.querySelector('.principal')
-        const menu = document.querySelector('.mobile-menu');
-        const backButton = document.querySelector('.back');
-
-        hamburger.addEventListener('click', toggleMenu)
-
-        main.addEventListener('click', function (event) {
-            closeMenu()
-        });
-
-        function toggleMenu() {
-            menu.classList.toggle('active');
-        }
-
-        function isMenuOpen() {
-            return menu.classList.contains('active');
-        }
-
-        function closeMenu() {
-            return menu.classList.remove('active');
-        }
-
-        function checkScrollPosition() {
-            if (window.scrollY > 300) {
-                backButton.style.display = 'flex';
-            } else {
-                backButton.style.display = 'none';
-            }
-        }
-
-        window.addEventListener('scroll', checkScrollPosition);
-
-        const links = document.querySelectorAll('a[href^="#"]');
-        // Adicione uma função para scroll suave ao clicar nos links do menu
-        links.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-
-                const targetId = link.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    toggleMenu()
-                    const offset = -30;
-
-                    // Calcule a posição de parada ajustada
-                    const targetPosition = targetSection.offsetTop + offset;
-
-                    window.scroll({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+        doCarousel('.carousel-container');
     </script>
 </body>
 
