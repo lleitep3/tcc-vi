@@ -496,6 +496,12 @@
             // Obtém o valor do scroll
             var scrollValue = window.scrollY;
 
+            if (scrollValue < 300) {
+                document.body.classList.remove('scrolled-300');
+            } else {
+                document.body.classList.add('scrolled-300');
+            }
+
             // Obtém todas as seções
             var sections = document.querySelectorAll('.container.section');
 

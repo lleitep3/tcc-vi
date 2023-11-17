@@ -13,7 +13,18 @@ body {
 }
 
 body .top-menu {
+  transition: all ease .3s;
+  transform: translateY(-100%);
+  background-color: transparent;
+
+}
+
+body.scrolled-300 .top-menu {
+  transform: translateY(0);
   background-color: #1b1b1bcc;
+}
+
+body .top-menu {
   height: 114px;
   display: flex;
   justify-content: space-between;
@@ -123,7 +134,7 @@ p {
 .select-menu {
   padding: 1rem 0.5rem;
   text-align: center;
-  border-radius: 2rem;
+  border-radius: 3.2rem;
   background-color: #ff7a00;
   color: white;
 }
@@ -291,7 +302,7 @@ p {
 }
 
 .gog-text i {
-  color: #7300B4;
+  color: #7300b4;
   font-family: Jost;
   font-size: 30px;
   font-weight: 700;
@@ -302,7 +313,7 @@ p {
 .gog-text small {
   display: inline-block;
   width: 100%;
-  color: #7300B4;
+  color: #7300b4;
   text-align: right;
   font-family: Jost;
   font-size: 30px;
