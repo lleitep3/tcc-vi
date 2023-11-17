@@ -331,3 +331,17 @@
 .box-timeline__item.yellow .year {
   color: #FF7900;
 }
+
+.box-timeline::-webkit-scrollbar {
+  width: 12px;
+}
+
+.box-timeline::-webkit-scrollbar-thumb {
+  background-color: #ff7a00cc;
+  border-radius: 16px;
+}
+
+.box-timeline::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+}
