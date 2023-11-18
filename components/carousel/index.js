@@ -53,4 +53,12 @@ function doCarousel(containerClass) {
         }, 15000);
     }
     play()
+
+    const carouselContainer = document.querySelector(".carousel-container")
+
+    carouselContainer.addEventListener("click", (e) => {
+        if (e.target.tagName === "IMG") {
+            carouselContainer.classList.toggle("activate-modal")
+        }
+    })
 }
