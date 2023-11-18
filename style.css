@@ -13,10 +13,9 @@ body {
 }
 
 body .top-menu {
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   transform: translateY(-100%);
   background-color: transparent;
-
 }
 
 body.scrolled-300 .top-menu {
@@ -41,10 +40,10 @@ body .top-menu {
   color: #fff;
   text-align: center;
   font-family: Jost;
-  font-size: 120px;
+  font-size: 6vw;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 4.8px;
 }
 
@@ -62,7 +61,7 @@ p {
 }
 
 .box {
-  border-radius: 45px;
+  /* border-radius: 45px; */
   background: rgba(0, 0, 0, 0.3);
   padding: 45px;
   color: white;
@@ -77,9 +76,16 @@ p {
 }
 
 .bg-texture {
-  background-image: url(./assets/images/bg-orange-texture.png);
+  background-image: url(./assets/images/textura.png);
   background-position: center;
   background-size: cover;
+}
+
+.highlight {
+  background-color: white;
+  color: black;
+  padding: 50px;
+  text-align: justify;
 }
 
 .bg-gray {
@@ -88,14 +94,27 @@ p {
 }
 
 .bg-orange {
-  border-radius: 80px;
-  background: #ff7a00cc;
+  background-color: #ff7a00cc;
   color: white;
+}
+
+.bg-snow {
+  background-color: #fffafa;
 }
 
 .bg-orange .section-title b,
 .bg-orange .section-title {
   color: white;
+}
+
+.highlight .section-title b,
+.highlight .section-title {
+  color: black;
+  font-size: 38px;
+}
+
+.highlight .section-title b {
+  font-size: 80px;
 }
 
 .bg-white {
@@ -205,7 +224,7 @@ p {
   color: #fff;
   text-align: center;
   font-family: Jost;
-  font-size: 40px;
+  font-size: 1.7vw;
   font-style: italic;
   font-weight: 300;
   line-height: normal;
@@ -232,56 +251,37 @@ p {
   height: 100%;
 }
 
-.flip-card {
-  background-color: transparent;
-  height: 808px;
-  width: 500px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 0 auto;
+.poesias {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
+.bg-purple {
+  background-color: #7e00b4;
+  background-image: url("./assets/images/texture-balls.jpg");
+  background-size: 300px;
+}
+
+.bg-snow {
+  padding: 25px !important;
+  font-size: 22px;
+  line-height: 1.3;
+  width: 50%;
+}
+
+.bg-snow .title {
+  padding: 10px 0 15px;
+  display: inline-block;
+}
+
+.bg-snow span {
   width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.wrap-flip-card {
-  float: right;
-  margin-left: 30px;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
+  text-align: right;
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .audio {
