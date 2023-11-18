@@ -333,3 +333,14 @@ p {
   line-height: normal;
   padding-right: 100px;
 }
+
+figure img {
+  margin-bottom: 12px !important;
+}
+
+.legend {
+  font-size: 22px;
+  font-style: italic;
+  max-width: 700px;
+  text-align: center;
+}
