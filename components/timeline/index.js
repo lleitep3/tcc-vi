@@ -7,7 +7,7 @@ function buildHTML(item, side, color) {
     <div class="center-content">
         <div class="circle">
             <div class="img-wrap">
-                <img src="./assets/images/pessoas/${item.image}" />
+                <img src="./assets/images/timeline/${item.image}" />
             </div>
             <div class="cable"></div>
             <div class="info-wrap">

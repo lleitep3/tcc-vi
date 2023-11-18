@@ -3,7 +3,7 @@
         "title": "Carolina Maria de Jesus",
         "subtitle": "Quarto de Despejo",
         "description": "O livro é formado por 20 diários escritos entre julho de 1955 e janeiro de 1960 enquanto Carolina morava na favela do Canindé, em São Paulo, relatando o que viu, viveu e sentiu nesses anos.",
-        "image": "Carolina.webp",
+        "image": "Carolina-V3.webp",
         "year": "1960"
     },
     {
@@ -17,49 +17,49 @@
         "title": "Sergio Vaz",
         "subtitle": "Subindo a ladeira mora a noite",
         "description": "Criador da Cooperifa (Cooperativa Cultural da Periferia) e um dos criadores do Sarau da Cooperifa. Subindo a ladeira mora a noite é seu primeiro livro, publicado de forma independente.",
-        "image": "Sergio Vaz.webp",
+        "image": "SergioVaz.webp",
         "year": "1988"
     },
     {
         "title": "Paulo Lins",
         "subtitle": "Cidade de Deus",
         "description": "Baseado em fatos reais, o romance aborda temas como juventude, tráfico de drogas, governo paralelo, pobreza e variadas formas de violência. Virou filme no ano de 2002.",
-        "image": "Paulo.webp",
+        "image": "PauloLins.webp",
         "year": "1997"
     },
     {
         "title": "Ferréz",
         "subtitle": "Capão Pecado",
         "description": "Ao contar a história de Rael, que sonhava em ser escritor, mas se apaixona pela namorada do melhor amigo, Ferréz expõe os códigos de uma das favelas mais violentas de São Paulo, Capão Redondo.",
-        "image": "Ferrez.webp",
+        "image": "FERREZ-V3.webp",
         "year": "2000"
     },
     {
         "title": "Alessandro Buzo",
         "subtitle": "O Trem",
         "description": "Buzo retrata os trens do subúrbio de São Paulo narrando o difícil dia-a-dia dos passageiros da linha F da CPTM, que liga o Brás (região central) à Calmon Viana (Município de Poá-SP).",
-        "image": "Alessandro.webp",
+        "image": "AlessandroBuzo.webp",
         "year": "2000"
     },
     {
         "title": "Esmeralda Ortiz",
         "subtitle": "Esmeralda por que não dancei",
         "description": "Ortiz traz seu depoimento de quem esteve nas ruas desde os oito anos, convivendo com a violência, as drogas e a indiferença. É um roteiro da construção da sua auto-estima e do seu renascimento.",
-        "image": "Esmeralda.webp",
+        "image": "Esmeralda-V3.webp",
         "year": "2001"
     },
     {
         "title": "Tula Pilar",
         "subtitle": "Palavras inacadêmicas",
         "description": "Ex-empregada doméstica, babá e cozinheira, Tula ganhou reconhecimento por organizar saraus na periferia de São Paulo, de forma independente com sua poesia e como vendedora da revista Ocas.",
-        "image": "Tula.webp",
+        "image": "TulaPilar.webp",
         "year": "2004"
     },
     {
         "title": "Allan da Rosa",
         "subtitle": "Vão",
         "description": "A partir das experiências dos afro-brasileiros que vivem nas comunidades periféricas, articulou um espaço imaginativo para negros marginalizados como forma de escapar da pobreza e do racismo.",
-        "image": "Allan da Rosa.webp",
+        "image": "AllanDaRosa.webp",
         "year": "2005"
     },
     {
@@ -73,7 +73,7 @@
         "title": "Dinha",
         "subtitle": "De passagem, mas não a passeio",
         "description": "Com delicadeza e lucidez, Dinha escreve para si mesma e para todas as pessoas, revelando o mundo de uma mulher da periferia, da cidade, de lágrimas e sonhos, de amor e de sombras.",
-        "image": "Dinha.webp",
+        "image": "Dinha-V3.webp",
         "year": "2006"
     },
     {
@@ -87,28 +87,28 @@
         "title": "Elizandra Souza",
         "subtitle": "Aguas da cabaça",
         "description": "A obra reúne sete mulheres negras em diferentes papéis e protagonismos e é dedicada a mulheres negras que espalham sementes para que nunca falte motivos para continuarem vivas.",
-        "image": "elisandra-ok.jpg",
+        "image": "Elisandra-V3.webp",
         "year": "2012"
     },
     {
         "title": "Marco Pezão",
         "subtitle": "Nós é ponte e atravessa qualquer rio",
         "description": "Pezão é um dos fundadores da Cooperifa e participou de diversas antologias da literatura periférica, como Nóis é ponte e atravessa qualquer rio.",
-        "image": "pezão-ok.jpg",
+        "image": "Pezão-V3.webp",
         "year": "2013"
     },
     {
         "title": "Geovani Martins",
         "subtitle": "O sol na cabeça",
         "description": "Narra a infância e a adolescência de garotos para quem às angústias e dificuldades inerentes à idade somam-se a violência de crescer no lado menos favorecido do Rio de Janeiro.",
-        "image": "geovani-ok.jpg",
+        "image": "Geovani-V3.webp",
         "year": "2017"
     },
     {
         "title": "Rodrigo Ciríaco",
         "subtitle": "Te pego lá fora",
         "description": "O autor revela as violências e epifanias das vidas em uma escola pública da periferia de São Paulo, construindo histórias que retratam o ambiente escolar como um todo.",
-        "image": "rodrigo-ok.jpg",
+        "image": "Rodrigo-V3.webp",
         "year": "2021"
     }
 ]

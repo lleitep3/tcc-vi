@@ -54,10 +54,11 @@ function doCarousel(containerClass) {
     }
     play()
 
-    const carouselContainer = document.querySelector(".carousel-container")
+    const carouselContainer = document.querySelector(".carousel-box")
 
     carouselContainer.addEventListener("click", (e) => {
-        if (e.target.tagName === "IMG") {
+
+        if (e.target.tagName !== "BUTTON") {
             carouselContainer.classList.toggle("activate-modal")
         }
     })
