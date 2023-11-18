@@ -64,6 +64,7 @@ body .top-menu {
 p {
   margin: 50px 0;
   text-align: justify;
+  padding: 0 1rem;
 }
 
 .ph-100 {
@@ -73,7 +74,7 @@ p {
 .box {
   /* border-radius: 45px; */
   background: rgba(0, 0, 0, 0.3);
-  padding: 45px;
+  padding: 50px;
   color: white;
 }
 
@@ -112,6 +113,8 @@ p {
   background-color: #fffafa;
 }
 
+.bg-red .section-title b,
+.bg-red .section-title,
 .bg-orange .section-title b,
 .bg-orange .section-title {
   color: white;
@@ -198,12 +201,7 @@ p {
 
 .section {
   margin: 0 auto;
-  padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.section *:first-child {
-  padding-top: 0;
 }
 
 .section-title {
@@ -275,6 +273,10 @@ p {
   background-size: 300px;
 }
 
+.bg-red {
+  background-color: #ff0000cc;
+}
+
 .bg-snow {
   padding: 25px !important;
   font-size: 22px;
@@ -312,7 +314,7 @@ p {
   flex-direction: column;
 }
 
-.gog-text i {
+.gog-text {
   color: #7300b4;
   font-family: Jost;
   font-size: 30px;
@@ -341,7 +343,15 @@ figure img {
 .legend {
   font-size: 22px;
   font-style: italic;
-  max-width: 700px;
+  max-width: 900px;
   text-align: center;
   line-height: 1.2;
+}
+
+.max-width-700 {
+  max-width: 700px;
+}
+
+.italic {
+  font-style: italic;
 }

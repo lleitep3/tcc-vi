@@ -1,8 +1,9 @@
 .box-timeline {
   display: flex;
   overflow-x: auto;
-  height: 700px;
+  height: 760px;
   cursor: grab;
+  padding: 50px 0;
 }
 
 .box-timeline__item {
@@ -262,14 +263,13 @@
   line-height: normal;
 }
 
-
 .box-timeline__item.purple .center-content .info-wrap .bar,
 .box-timeline__item.purple .center-content .cable,
 .box-timeline__item.purple .center-point .circle .cable,
 .box-timeline__item.purple .dot,
 .box-timeline__item.purple .item-content-box .line,
 .box-timeline__item.purple .center-point > .bar {
-  background-color: #7D00B4;
+  background-color: #7d00b4;
 }
 
 .box-timeline__item.purple .center-content .info,
@@ -278,14 +278,13 @@
 .box-timeline__item.purple .center-point > .bar,
 .box-timeline__item.purple .item-content-box .item-content-box_info,
 .box-timeline__item.purple .center-content .info {
-  border-color: #7D00B4;
+  border-color: #7d00b4;
 }
 
 .box-timeline__item.purple .center-content .info h4,
 .box-timeline__item.purple .year {
-  color: #7D00B4;
+  color: #7d00b4;
 }
-
 
 .box-timeline__item.red .center-content .info-wrap .bar,
 .box-timeline__item.red .center-content .cable,
@@ -293,7 +292,7 @@
 .box-timeline__item.red .dot,
 .box-timeline__item.red .item-content-box .line,
 .box-timeline__item.red .center-point > .bar {
-  background-color: #F00;
+  background-color: #f00;
 }
 
 .box-timeline__item.red .center-content .info,
@@ -302,12 +301,12 @@
 .box-timeline__item.red .center-point > .bar,
 .box-timeline__item.red .item-content-box .item-content-box_info,
 .box-timeline__item.red .center-content .info {
-  border-color: #F00;
+  border-color: #f00;
 }
 
 .box-timeline__item.red .center-content .info h4,
 .box-timeline__item.red .year {
-  color: #F00;
+  color: #f00;
 }
 
 .box-timeline__item.yellow .center-content .info-wrap .bar,
@@ -316,7 +315,7 @@
 .box-timeline__item.yellow .dot,
 .box-timeline__item.yellow .item-content-box .line,
 .box-timeline__item.yellow .center-point > .bar {
-  background-color: #FF7900;
+  background-color: #ff7900;
 }
 
 .box-timeline__item.yellow .center-content .info,
@@ -325,12 +324,12 @@
 .box-timeline__item.yellow .center-point > .bar,
 .box-timeline__item.yellow .item-content-box .item-content-box_info,
 .box-timeline__item.yellow .center-content .info {
-  border-color: #FF7900;
+  border-color: #ff7900;
 }
 
 .box-timeline__item.yellow .center-content .info h4,
 .box-timeline__item.yellow .year {
-  color: #FF7900;
+  color: #ff7900;
 }
 
 .box-timeline::-webkit-scrollbar {
