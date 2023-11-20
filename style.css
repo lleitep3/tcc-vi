@@ -358,7 +358,11 @@ figure img {
 }
 
 footer {
-  background: #fffafa;
+  background-color: #fffafa;
+  background-image: url("./assets/images/trilhorodapb-351.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 footer .box-authors {
@@ -371,13 +375,27 @@ footer .box-authors {
 footer .box-author {
   display: flex;
   gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-left-116 {
+  margin-left: 116px;
+}
+
+.margin-left--29 {
+  margin-left: -29px;
+}
+
+.margin-left--110 {
+  margin-left: -110px;
 }
 
 footer .box-author__image {
-  width: 230px;
-  height: 230px;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 50%;
   border: 3px solid #f00;
   background: #fff;
 }
@@ -412,7 +430,7 @@ footer .box-author__info {
 footer .box-author__info .box-author__name {
   color: #000;
   font-family: Jost;
-  font-size: 36px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 600;
   line-height: normal;
@@ -421,16 +439,16 @@ footer .box-author__info .box-author__name {
 footer .box-author__info .box-author__age {
   color: #000;
   font-family: Jost;
-  font-size: 36px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-footer .box-author__info .box-box-author__ocupation {
+footer .box-author__info .box-author__ocupation {
   color: #000;
   font-family: Jost;
-  font-size: 36px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -445,26 +463,27 @@ footer .box-author.right .box-author__info {
 }
 
 .footer-title {
+  padding-top: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .footer-title .footer-title__content {
-  border-top: 8px solid #FF7A00;
-  border-bottom: 8px solid #FF7A00;
+  border-top: 8px solid #ff7a00;
+  border-bottom: 8px solid #ff7a00;
   font-weight: bold;
-  color: #FF7A00;
+  color: #ff7a00;
 }
 
 .footer-title .line-orange.left {
-  border-top: 8px solid #FF7A00;
+  border-top: 8px solid #ff7a00;
   flex-grow: 1;
   height: 100%;
 }
 
 .footer-title .line-orange.right {
-  border-bottom: 8px solid #FF7A00;
+  border-bottom: 8px solid #ff7a00;
   flex-grow: 1;
   height: 100%;
   align-self: flex-end;
