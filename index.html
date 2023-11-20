@@ -19,16 +19,18 @@
             <span>PROXIMA PARADA ESTAÇÃO SARAU</span>
         </h1>
 
-        <select class="select-menu" onchange="goSection(this)">
-            <option value="">-</option>
-            <option value="#section1">Um sarau para salvar a alma</option>
-            <option value="#section2">Afinal, é Marginal ou Periférica?</option>
-            <option value="#section3">Visão Periférica</option>
-            <option value="#section4">Palavras pronunciadas pelo poeta</option>
-            <option value="#section5">Poesia contra a violência</option>
-            <option value="#section6">Poetisa de zona</option>
-        </select>
-
+        <label>
+            <!-- <div class="currentValue">-</div> -->
+            <select class="select-menu" onchange="goSection(this)">
+                <option value="">-</option>
+                <option value="#section1">Um sarau para salvar a alma</option>
+                <option value="#section2">Afinal, é Marginal ou Periférica?</option>
+                <option value="#section3">Visão Periférica</option>
+                <option value="#section4">Palavras pronunciadas pelo poeta</option>
+                <option value="#section5">Poesia contra a violência</option>
+                <option value="#section6">Poetisa de zona</option>
+            </select>
+        </label>
     </header>
     <div class="bg-only-photo"></div>
     <div class="bg-top">
@@ -482,7 +484,8 @@
                         Para um dos participantes da disciplina, Davi Nelson, de 17 anos, o sarau “é um lugar que te
                         acolhe,
                         que te faz sentir alguém especial. É um ambiente que te traz felicidade”. Outra participante é
-                        Gabrielle Bueno, de 17 anos, que diz ter se sentido emocionada ao recitar pela primeira vez, “a poesia
+                        Gabrielle Bueno, de 17 anos, que diz ter se sentido emocionada ao recitar pela primeira vez, “a
+                        poesia
                         vai
                         limpando a gente, a gente consegue falar e expressar o que estamos sentindo. Foi um momento
                         muito
@@ -509,7 +512,8 @@
                         “Eu acho que a educação transforma tudo, ela é a chave para salvar nossa vida. E principalmente
                         em
                         escolas públicas, em periferias, que são a maioria do nosso país, acho que quanto mais a gente
-                        ampliar essa educação de poesias, de saraus, isso vai transformar a vida de todos”, diz Rafaela Macedo,
+                        ampliar essa educação de poesias, de saraus, isso vai transformar a vida de todos”, diz Rafaela
+                        Macedo,
                         de
                         15 anos, que não deixa de sonhar e acreditar que a situação das periferias pode melhorar.
                     </p>
@@ -671,7 +675,7 @@
 
         window.addEventListener('scroll', function () {
             // Obtém o valor do scroll
-            var scrollValue = window.scrollY;
+            const scrollValue = window.scrollY;
 
             if (scrollValue < 300) {
                 document.body.classList.remove('scrolled-300');
@@ -680,12 +684,12 @@
             }
 
             // Obtém todas as seções
-            var sections = document.querySelectorAll('.container.section');
+            const sections = document.querySelectorAll('.container.section');
 
             // Itera sobre as seções
             sections.forEach(function (section) {
                 // Obtém a posição da seção em relação ao topo da página
-                var sectionTop = section.offsetTop;
+                const sectionTop = section.offsetTop;
 
                 // Verifica se o valor do scroll está dentro da seção
                 if (scrollValue >= sectionTop && scrollValue < sectionTop + section.offsetHeight) {
