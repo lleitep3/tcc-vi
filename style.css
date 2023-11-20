@@ -113,6 +113,8 @@ p {
   background-color: #fffafa;
 }
 
+.bg-yellow .section-title b,
+.bg-yellow .section-title,
 .bg-red .section-title b,
 .bg-red .section-title,
 .bg-orange .section-title b,
@@ -274,7 +276,11 @@ p {
 }
 
 .bg-red {
-  background-color: #ff0000cc;
+  background-color: #ff0000;
+}
+
+.bg-yellow {
+  background-color: #DFA806;
 }
 
 .bg-snow {
@@ -467,6 +473,7 @@ footer .box-author.right .box-author__info {
   width: 100%;
   display: flex;
   justify-content: center;
+  background: white;
 }
 
 .footer-title .footer-title__content {
