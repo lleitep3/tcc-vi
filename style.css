@@ -4,7 +4,7 @@
 }
 
 body {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -74,7 +74,7 @@ p {
 .box {
   /* border-radius: 45px; */
   background: rgba(0, 0, 0, 0.3);
-  padding: 50px;
+  padding: 1.9em;
   color: white;
 }
 
@@ -95,7 +95,7 @@ p {
 .highlight {
   background-color: white;
   color: black;
-  padding: 50px;
+  padding: 1.4em;
   text-align: justify;
 }
 
@@ -125,11 +125,11 @@ p {
 .highlight .section-title b,
 .highlight .section-title {
   color: black;
-  font-size: 38px;
+  font-size: 2.4rem;
 }
 
 .highlight .section-title b {
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .bg-white {
@@ -209,7 +209,7 @@ p {
 .section-title {
   color: #000;
   font-family: Jost;
-  font-size: 48px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -225,7 +225,7 @@ p {
   color: #000;
   text-align: center;
   font-family: Jost;
-  font-size: 128px;
+  font-size: 8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 130%; /* 166.4px */
@@ -280,7 +280,7 @@ p {
 }
 
 .bg-yellow {
-  background-color: #DFA806;
+  background-color: #dfa806;
 }
 
 .bg-snow {
@@ -347,7 +347,7 @@ figure img {
 }
 
 .legend {
-  font-size: 22px;
+  font-size: 1.4rem;
   font-style: italic;
   max-width: 900px;
   text-align: center;
@@ -494,4 +494,78 @@ footer .box-author.right .box-author__info {
   flex-grow: 1;
   height: 100%;
   align-self: flex-end;
+}
+
+@media (max-width: 1110px) {
+  heml,
+  body,
+  .container {
+    max-width: 100%;
+    font-size: 1.4rem;
+  }
+
+  p {
+    margin: 3rem 0;
+    padding: 0 2rem;
+  }
+
+  body .top-menu {
+    height: 90px;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .top-menu .top-menu_title {
+    font-size: 1.1rem;
+    margin-top: -5px;
+  }
+
+  .bg-top .bg-top_subtitle {
+    font-size: 1rem;
+  }
+
+  .box {
+    padding: 1em;
+  }
+
+  .legend {
+    font-size: 1rem;
+  }
+
+  .ph-100 {
+    padding: initial;
+  }
+
+  .section-title {
+    line-height: 1.3;
+  }
+
+  .section-title b {
+    line-height: 1;
+  }
+
+  .gog-text {
+    font-size: 1.5rem;
+  }
+
+  footer .box-authors {
+    padding: 1rem;
+  }
+
+  .margin-left-116 {
+    margin-left: 0;
+  }
+
+  .margin-left--110 {
+    margin-left: 0;
+  }
+
+  footer .box-author__image {
+    width: 35%;
+    height: auto;
+  }
+
+  footer .box-author__info .box-author__ocupation {
+    text-align: end;
+  }
 }
