@@ -518,13 +518,12 @@ footer .box-author.right .box-author__info {
   }
 
   body .top-menu {
-    height: 90px;
     flex-direction: column;
     padding: 1rem;
   }
 
   .top-menu .top-menu_title {
-    font-size: 1.1rem;
+    font-size: .9rem;
     margin-top: -5px;
   }
 
