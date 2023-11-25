@@ -18,9 +18,8 @@
             <span class="square"></span>
             <span>PRÓXIMA PARADA ESTAÇÃO SARAU</span>
         </h1>
-
         <label>
-            <select class="select-menu" onchange="goSection(this)">
+            <!-- <select class="select-menu" onchange="goSection(this)">
                 <option value="">-</option>
                 <option value="#section1">Um sarau para salvar a alma</option>
                 <option value="#section2">Afinal, é Marginal ou Periférica?</option>
@@ -28,7 +27,18 @@
                 <option value="#section4">Palavras pronunciadas pelo poeta</option>
                 <option value="#section5">Poesia contra a violência</option>
                 <option value="#section6">Poetisa de zona</option>
-            </select>
+            </select> -->
+            <div class="dropdown select-menu" id="dropdown">
+                <span id="selectedOption">-</span>
+                <div class="dropdown-content">
+                    <button data-section="#section1">Um sarau para salvar a alma</button>
+                    <button data-section="#section2">Afinal, é Marginal ou Periférica?</button>
+                    <button data-section="#section3">Visão Periférica</button>
+                    <button data-section="#section4">Palavras pronunciadas pelo poeta</button>
+                    <button data-section="#section5">Poesia contra a violência</button>
+                    <button data-section="#section6">Poetisa de zona</button>
+                </div>
+            </div>
         </label>
     </header>
     <div class="bg-only-photo photo-2">
@@ -678,10 +688,8 @@
         doCarousel('.carousel-container');
         doTimeline('.box-timeline');
 
-        function goSection(select) {
-            const selectedValue = select.value;
-
-            const targetSection = document.querySelector(selectedValue);
+        function goSection(section) {
+            const targetSection = document.querySelector(section);
 
             if (targetSection) {
                 targetSection.scrollIntoView({
@@ -714,6 +722,33 @@
                     document.querySelector('.select-menu').value = '#' + section.id;
                 }
             });
+        });
+
+        const dropdown = document.getElementById('dropdown');
+
+        function selectOption(element) {
+            const option = element.innerText
+            const section = element.getAttribute("data-section")
+            document.getElementById('selectedOption').innerText = option;
+            goSection(section)
+        }
+
+        dropdown.addEventListener('click', function (e) {
+            e.stopPropagation()
+            e.preventDefault()
+            this.classList.toggle('active');
+
+            if (e.target.tagName === 'BUTTON') {
+                selectOption(e.target)
+                this.classList.remove('active');
+            }
+        });
+
+        // Fechar o menu se o clique for fora do dropdown
+        window.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
         });
     </script>
 </body>

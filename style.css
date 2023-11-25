@@ -164,7 +164,7 @@ p {
 .top-menu .top-menu_title .square + span {
   z-index: 1;
 }
-
+/*
 .select-menu {
   text-align: center;
   border-radius: 3.2rem;
@@ -172,7 +172,7 @@ p {
   color: white;
   font-size: 20px;
   padding: 3px 15px;
-}
+} */
 
 .bg-only-photo {
   background-image: url("./assets/images/bg-topo.png");
@@ -622,4 +622,63 @@ footer .box-author.right .box-author__info {
   .bg-snow {
     width: 100%;
   }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-flex;
+  background-color: #ff7a00;
+  padding: 0 1rem;
+  border-radius: 22px;
+  color: white;
+  width: 320px;
+  height: 37px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -1000%;
+  width: 100%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: all .1s ease-in-out;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  z-index: 1;
+}
+
+#selectedOption {
+  font-size: 1.2rem;
+}
+
+.dropdown-content button {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.dropdown-content button:hover {
+  background-color: #ff7b00;
+  color: #fff;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown.active .dropdown-content {
+  top: 100%;
+  opacity: 1;
 }
