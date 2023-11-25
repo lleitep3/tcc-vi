@@ -32,7 +32,27 @@
             </select>
         </label>
     </header>
-    <div class="bg-only-photo"></div>
+    <div class="bg-only-photo photo-2">
+        <div class="overlay"></div>
+    </div>
+    <script>
+        function trocarImagem() {
+            const bg = document.querySelector(".bg-only-photo");
+
+            if (bg.classList.contains("photo-2")) {
+                bg.classList.remove("photo-2");
+                bg.classList.add("photo-3");
+            } else if (bg.classList.contains("photo-3")) {
+                bg.classList.remove("photo-3");
+                bg.classList.add("photo-2");
+            }
+        }
+
+        setTimeout(function () {
+            trocarImagem();
+            setInterval(trocarImagem, 8000); // Mude para setInterval após a primeira troca
+        }, 8000);
+    </script>
     <div class="bg-top">
         <h2 class="bg-top_title">
             PRÓXIMA PARADA:
@@ -519,7 +539,7 @@
                     </p>
 
                     <figure class="ph-100 mb-20 flex flex-col justify-center items-center">
-                        <img src="./assets/images/escola.png" class="align-center" />
+                        <img src="./assets/images/escola.jpg" class="align-center" />
                         <small class="legend max-width-700">A eletiva possibilita o uso da escrita para o combate e
                             resistência à
                             violências que nem sempre entram em pauta nas escolas <br /> (Foto: Alanis Mancini)
@@ -621,7 +641,7 @@
         <div class="box-authors container">
             <div class="box-author margin-left-116">
                 <div class="box-author__image b-red">
-                    <img src="./assets/images/timeline/Dinha-V3.webp" />
+                    <img src="./assets/images/equipe/alanis.JPG" />
                 </div>
                 <div class="box-author__info">
                     <h5 class="box-author__name">Alanis Mancini</h5>
@@ -632,7 +652,7 @@
 
             <div class="box-author right margin-left--29">
                 <div class="box-author__image b-yellow">
-                    <img src="./assets/images/timeline/Dinha-V3.webp" />
+                    <img src="./assets/images/equipe/luca.JPG" />
                 </div>
                 <div class="box-author__info">
                     <h5 class="box-author__name">Luca Guerra</h5>
@@ -643,7 +663,7 @@
 
             <div class="box-author margin-left--110">
                 <div class="box-author__image b-purple">
-                    <img src="./assets/images/timeline/Dinha-V3.webp" />
+                    <img src="./assets/images/equipe/vi2.JPG" />
                 </div>
                 <div class="box-author__info">
                     <h5 class="box-author__name">Vinicius Braga</h5>

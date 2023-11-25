@@ -184,15 +184,31 @@ p {
   left: 0;
   right: 0;
   height: 100vh;
-  max-height: 80vh;
+  max-height: 70vh;
   z-index: -1;
+  transition: background-image 1s ease-in-out;
+}
+
+.bg-only-photo .overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0000004d;
+}
+
+.bg-only-photo.photo-2 {
+  background-image: url("./assets/images/bg-topo-2.png");
+}
+
+.bg-only-photo.photo-3 {
+  background-image: url("./assets/images/bg-topo-3.png");
 }
 
 .bg-top {
   position: relative;
   margin-top: -114px;
   height: 100vh;
-  max-height: 80vh;
+  max-height: 70vh;
   text-align: center;
   color: white;
   display: flex;
@@ -421,7 +437,7 @@ footer .box-author__image.b-purple {
 footer .box-author__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 footer .box-author__info {
