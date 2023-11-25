@@ -133,7 +133,6 @@ p {
 }
 
 .bg-white {
-  position: relative;
   background: white;
   z-index: 2;
   padding-top: 50px;

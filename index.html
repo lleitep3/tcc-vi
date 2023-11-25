@@ -31,6 +31,7 @@
             <div class="dropdown select-menu" id="dropdown">
                 <span id="selectedOption">-</span>
                 <div class="dropdown-content">
+                    <button data-section="#section0">História dos saraus</button>
                     <button data-section="#section1">Um sarau para salvar a alma</button>
                     <button data-section="#section2">Afinal, é Marginal ou Periférica?</button>
                     <button data-section="#section3">Visão Periférica</button>
@@ -56,7 +57,7 @@
         </small>
     </div>
     <div class="bg-white">
-        <section id="section0" class="section">
+        <section id="section0" class="section" data-offset="1">
             <div class="container">
                 <p>
                     Um lugar vazio passa a ser ocupado. Pessoas chegam e se sentam, curiosas para ouvir outras vozes. A
@@ -673,16 +674,35 @@
         doCarousel('.carousel-container');
         doTimeline('.box-timeline');
         const selectedOption = document.getElementById('selectedOption')
+        const dropdown = document.getElementById('dropdown');
+
+        const sections = document.querySelectorAll('.section-title');
 
         function goSection(section) {
             const targetSection = document.querySelector(section);
 
             if (targetSection) {
-                targetSection.scrollIntoView({
+
+                const offset = targetSection.getAttribute("data-offset") ? + window.innerHeight : 0
+
+                window.scrollTo({
+                    top: targetSection.offsetTop + offset,
                     behavior: 'smooth'
-                });
+                  });
             }
         }
+
+        function selectOption(element) {
+            selectedOption.innerText = element.innerText;
+            goSection(element.getAttribute("data-section"))
+        }
+
+        // Fechar o menu se o clique for fora do dropdown
+        window.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
 
         window.addEventListener('scroll', function () {
             // Obtém o valor do scroll
@@ -694,29 +714,22 @@
                 document.body.classList.add('scrolled-300');
             }
 
-            // Obtém todas as seções
-            const sections = document.querySelectorAll('.container.section');
-
             // Itera sobre as seções
-            sections.forEach(function (section) {
+            const section = Array.from(sections).reduce(function (currentSection, section) {
                 // Obtém a posição da seção em relação ao topo da página
-                const sectionTop = section.offsetTop;
 
-                // Verifica se o valor do scroll está dentro da seção
-                if (scrollValue >= sectionTop && scrollValue < sectionTop + section.offsetHeight) {
-                    // Atualiza a classe do menu conforme a seção visível
+                if ((scrollValue + (window.innerHeight * 0.8)) >= section.offsetTop) {
+                    if (section.offsetTop > currentSection.offsetTop) {
+                        return section
+                    }
                 }
-            });
+
+                return currentSection
+
+            }, { offsetTop: 0, innerText: '' });
+
+            selectedOption.innerText = section.innerText
         });
-
-        const dropdown = document.getElementById('dropdown');
-
-        function selectOption(element) {
-            const option = element.innerText
-            const section = element.getAttribute("data-section")
-            selectedOption.innerText = option;
-            goSection(section)
-        }
 
         dropdown.addEventListener('click', function (e) {
             e.stopPropagation()
@@ -726,13 +739,6 @@
             if (e.target.tagName === 'BUTTON') {
                 selectOption(e.target)
                 this.classList.remove('active');
-            }
-        });
-
-        // Fechar o menu se o clique for fora do dropdown
-        window.addEventListener('click', function (e) {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('active');
             }
         });
     </script>
