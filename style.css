@@ -596,8 +596,8 @@ footer .box-author.right .box-author__info {
   }
 
   footer .box-author__image {
-    width: 35%;
-    height: auto;
+    width: 152px;
+    height: 152px;
   }
 
   footer .box-author__info .box-author__ocupation {
