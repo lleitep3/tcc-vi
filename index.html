@@ -486,7 +486,7 @@
                     <figure class="ph-100 flex flex-col justify-center items-center">
                         <img src="./assets/images/barbara.png" class="align-center" />
                         <small class="legend">A literatura é uma ferramenta de protagonismo para a juventude,
-                            principalmente quando inserida na escola unida à liberdade de expressão <br /> (Foto: Alanis
+                            principalmente quando inserida na escola unida à liberdade de expressão (Foto: Alanis
                             Mancini)
                         </small>
                     </figure>
@@ -532,9 +532,9 @@
 
                     <figure class="ph-100 mb-20 flex flex-col justify-center items-center">
                         <img src="./assets/images/escola.jpg" class="align-center" />
-                        <small class="legend max-width-700">A eletiva possibilita o uso da escrita para o combate e
-                            resistência à
-                            violências que nem sempre entram em pauta nas escolas
+                        <small class="legend">
+                            A eletiva possibilita o uso da escrita para o combate e
+                            resistência à violências que nem sempre entram em pauta nas escolas
                             <!-- <br /> -->
                             (Foto: Alanis Mancini)
                         </small>
@@ -672,6 +672,7 @@
     <script>
         doCarousel('.carousel-container');
         doTimeline('.box-timeline');
+        const selectedOption = document.getElementById('selectedOption')
 
         function goSection(section) {
             const targetSection = document.querySelector(section);
@@ -704,7 +705,6 @@
                 // Verifica se o valor do scroll está dentro da seção
                 if (scrollValue >= sectionTop && scrollValue < sectionTop + section.offsetHeight) {
                     // Atualiza a classe do menu conforme a seção visível
-                    document.querySelector('.select-menu').value = '#' + section.id;
                 }
             });
         });
@@ -714,7 +714,7 @@
         function selectOption(element) {
             const option = element.innerText
             const section = element.getAttribute("data-section")
-            document.getElementById('selectedOption').innerText = option;
+            selectedOption.innerText = option;
             goSection(section)
         }
 
